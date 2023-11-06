@@ -6,8 +6,10 @@ const GroupNotify = ({ data }) => {
       <ProfilePic picUrl={data.profilePic} />
       <div>
         <p>
-          <a href="#">{data.userName}</a> {data.message}{" "}
-          <a href="#">{data.groupName}</a>
+          <a className="clr-dark-blue" href="#">
+            {data.userName}
+          </a>{" "}
+          {data.message} <a href="#">{data.groupName}</a>
           {data.read ? "" : <span className="unread"></span>}
         </p>
         <p>{data.time}</p>

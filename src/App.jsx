@@ -41,10 +41,12 @@ const App = () => {
     <main>
       <header>
         <div>
-          <h1>Notifications</h1>
+          <h1 className="clr-dark-blue">Notifications</h1>
           <span>{unreadNotification}</span>
         </div>
-        <button type="button">Mark all as Read</button>
+        <button type="button" className="btn">
+          Mark all as Read
+        </button>
       </header>
       <ul>
         {notificationData.map((ele) => (

@@ -6,7 +6,10 @@ const Comment = ({ data }) => {
       <ProfilePic picUrl={data.profilePic} />
       <div>
         <p>
-          <a href="#">{data.userName}</a> {data.message}
+          <a className="clr-dark-blue" href="#">
+            {data.userName}
+          </a>{" "}
+          {data.message}
           {data.read ? "" : <span className="unread"></span>}
         </p>
         <p>{data.time}</p>
