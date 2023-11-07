@@ -2,9 +2,9 @@ import ProfilePic from "./ProfilePic";
 
 const Request = ({ data }) => {
   return (
-    <div>
+    <div className="flex-container">
       <ProfilePic picUrl={data.profilePic} />
-      <div>
+      <div className="notification-content">
         <p>
           <a className="clr-dark-blue" href="#">
             {data.userName}

@@ -14,8 +14,8 @@
   --very-light-grayish-blue: hsl(210, 60%, 98%);
   --light-grayish-blue1: hsl(211, 68%, 94%);
   --light-grayish-blue2: hsl(205, 33%, 90%);
-  --grayish-blue: hsl(219, 14%, 63%);
-  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --grayish-blue: hsl(219, 12%, 48%);
+  --dark-grayish-blue: hsl(219, 10%, 35%);
   --very-dark-blue: hsl(224, 21%, 14%);
 }
 
@@ -25,14 +25,14 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 500;
 }
 
 body {
   font-size: 1.6rem;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 500;
   background-color: var(--very-light-grayish-blue);
-  color: var(--dark-grayish-blue);
+  color: var(--grayish-blue);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +53,7 @@ img {
 }
 
 main {
-  margin: 3.2rem;
+  margin: 3.1rem;
 }
 
 header,
@@ -69,7 +69,7 @@ h1 {
 }
 
 header span {
-  margin: 3.4px 0 0 1.3rem;
+  margin: 3.2px 0 0 1.3rem;
   width: 3.2rem;
   height: 2.6rem;
   display: grid;
@@ -85,6 +85,43 @@ header span {
   background-color: transparent;
   color: var(--dark-grayish-blue);
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  font-family: "Plus Jakarta Sans";
   cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+ul {
+  margin-top: 3.2rem;
+  display: grid;
+  row-gap: 0.8rem;
+}
+
+.flex-container {
+  display: flex;
+  padding: 1.8rem 1.9rem;
+  border-radius: 8px;
+}
+
+.avatar-img {
+  width: 4.4rem;
+  height: 4.4rem;
+}
+
+.notification-content {
+  margin-left: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-grayish-blue);
+  font-weight: 800;
+}
+
+.imp {
+  color: var(--blue);
 }

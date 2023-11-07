@@ -45,7 +45,7 @@ const App = () => {
           <span>{unreadNotification}</span>
         </div>
         <button type="button" className="btn">
-          Mark all as Read
+          Mark all as read
         </button>
       </header>
       <ul>
