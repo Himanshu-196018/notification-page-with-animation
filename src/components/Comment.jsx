@@ -2,7 +2,7 @@ import ProfilePic from "./ProfilePic";
 
 const Comment = ({ data }) => {
   return (
-    <div className="flex-container">
+    <div className={`flex-container ${data.read ? "" : "bg-unread"}`}>
       <ProfilePic picUrl={data.profilePic} />
       <div className="notification-content">
         <p>
@@ -12,9 +12,9 @@ const Comment = ({ data }) => {
           {data.message}
           {data.read ? "" : <span className="unread"></span>}
         </p>
-        <p>{data.time}</p>
+        <p className="time">{data.time}</p>
       </div>
-      <a href="#">
+      <a className="pictures" href="#">
         <img src={"./public/images/" + data.picture} />
       </a>
     </div>
