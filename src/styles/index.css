@@ -163,8 +163,20 @@ a {
 }
 
 .pictures {
+  width: 5.1rem;
+  height: 5rem;
+  display: grid;
+  border-radius: 8px;
+  place-content: center;
+  &:hover {
+    background-color: var(--light-grayish-blue2);
+  }
+}
+
+.pictures img {
   width: 4.5rem;
-  justify-self: flex-end;
+  height: 4.5rem;
+  place-content: center;
 }
 
 a:hover,
@@ -174,7 +186,30 @@ a:hover,
 
 /* styling for mobiles */
 @media screen and (max-width: 500px) {
-  html {
-    font-size: 52%;
+  body {
+    font-size: 1.4rem;
+  }
+  main {
+    margin: 2rem 1.6rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 1.4rem;
+  }
+  ul {
+    margin-top: 2.8rem;
+    row-gap: 1.4rem;
+  }
+  .flex-container {
+    padding: 1rem 1.6rem 1.7rem;
+  }
+  .avatar-img {
+    width: 4rem;
+    height: 4rem;
+  }
+  .notification-content {
+    margin-left: 1.2rem;
   }
 }
