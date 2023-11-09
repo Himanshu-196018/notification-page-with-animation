@@ -18,6 +18,15 @@ const App = () => {
     return count;
   }
 
+  const handleClick = () => {
+    const changedNotificationData = notificationData.map((ele) => {
+      if (!ele.read) ele.read = true;
+      return ele;
+    });
+    setUnreadNotification(getNumber());
+    setNotificationData(changedNotificationData);
+  };
+
   function getComponent(ele) {
     switch (ele.type) {
       case "group-related":
@@ -44,7 +53,7 @@ const App = () => {
           <h1 className="clr-dark-blue">Notifications</h1>
           <span>{unreadNotification}</span>
         </div>
-        <button type="button" className="btn">
+        <button type="button" className="btn" onClick={handleClick}>
           Mark all as read
         </button>
       </header>
