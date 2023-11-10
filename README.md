@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]("")
-- Live Site URL: [Demo/site]("")
+- Solution URL: [Solution](https://github.com/Himanshu-196018/notification-page-with-animation)
+- Live Site URL: [Demo/site](https://notification-page-himanshu-2301.netlify.app/)
 
 ## My process
 
