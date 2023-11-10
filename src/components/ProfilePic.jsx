@@ -1,11 +1,5 @@
 const ProfilePic = ({ picUrl }) => {
-  return (
-    <img
-      className="avatar-img"
-      src={"./public/images/" + picUrl}
-      alt={picUrl}
-    />
-  );
+  return <img className="avatar-img" src={"/images/" + picUrl} alt={picUrl} />;
 };
 
 export default ProfilePic;

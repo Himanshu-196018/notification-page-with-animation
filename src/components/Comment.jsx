@@ -15,7 +15,7 @@ const Comment = ({ data }) => {
         <p className="time">{data.time}</p>
       </div>
       <a className="pictures" href="#">
-        <img src={"./public/images/" + data.picture} />
+        <img src={"/images/" + data.picture} />
       </a>
     </div>
   );
