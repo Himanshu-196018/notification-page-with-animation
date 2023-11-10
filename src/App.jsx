@@ -5,6 +5,7 @@ import ReactToPost from "./components/ReactToPost";
 import Request from "./components/Request";
 import PrivateMessage from "./components/PrivateMessage";
 import Comment from "./components/Comment";
+import { motion } from "framer-motion";
 
 const App = () => {
   const [unreadNotification, setUnreadNotification] = useState(0);
@@ -57,11 +58,25 @@ const App = () => {
           Mark all as read
         </button>
       </header>
-      <ul>
+      <motion.ul>
         {notificationData.map((ele) => (
-          <li key={ele.key}>{getComponent(ele)}</li>
+          <motion.li
+            key={ele.key}
+            animate={{
+              opacity: [0, 1],
+              y: [50, 0],
+              transition: {
+                type: "spring",
+                delay: 0.1 * ele.key,
+                stiffness: 300,
+                damping: 24,
+              },
+            }}
+          >
+            {getComponent(ele)}
+          </motion.li>
         ))}
-      </ul>
+      </motion.ul>
     </main>
   );
 };
